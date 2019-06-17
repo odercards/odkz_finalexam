@@ -1,0 +1,449 @@
+$color1: #111111
+$color2: #fdfdfd
+$color3: #fff100
+$color4: #fff200
+
+*
+  //border: solid 1px red
+  font-family: 微軟正黑體
+
+html,body
+  width: 100%
+  height: 100%
+  margin: 0px
+  padding: 0px
+  position: absolute
+  
+body
+  position: relative
+  background-color: $color2
+  box-sizing: border-box
+  border-top: solid 30px 
+  border-bottom: solid 30px 
+  overflow: hidden
+   
+a
+  color: initial
+  text-decoration: initial
+  
+h3
+  margin: 40px 35px 0px 140px 
+  font-size: 24px
+  
+p
+  margin: 15px 55px 0px 55px
+  font-size: 15px
+  
+.left
+  position: absolute
+  height: 250px
+  width: 60px
+  top: calc(50% - 125px)
+  z-index: 10
+  .left-hover
+    position: absolute
+    height: 250px
+    width: 1150px
+    background-color: rgba(#fc799e, 0.9)
+    color: white
+    border-radius: 50px
+    left: -1100px
+    transition: 1s
+    &:hover
+      transform: translate(435px, 0px)
+    .club1
+      top: 50%
+      margin-left: 1108px 
+      margin-top: 75px 
+      width: 24px
+      color: black
+  .mxhm
+    position: absolute
+    height: 1000px
+    width: 400px
+    left: 60%
+    top: -25%
+    background: rgba(#dbdbdb, 0.95)
+    color: #1e010f
+    border-radius: 20px
+    .left-button
+      margin-left: 140px 
+      margin-top: 30px 
+      display: inline-block
+      padding: 10px 25px
+      letter-spacing: 2px
+.left-button.btnWebsite  
+  border: solid 1.5px #4f0629
+  background-color: #dbdbdb
+  color: white
+  transition: 0.5s
+  &:hover
+    background-color: rgba(#fc799e, 0.1)
+     
+.right
+  position: absolute
+  height: 250px
+  width: 60px
+  top: calc(50% - 125px)
+  right: 0%
+  z-index: 10
+  .right-hover
+    position: absolute
+    height: 250px
+    width: 1150px
+    background-color: rgba(#59b7f9, 0.8)
+    color: white
+    border-radius: 50px
+    right: -1097px
+    transition: 1s
+    &:hover
+      transform: translate(-430px, 0px)
+    .club2
+      top: 50%
+      margin-left: 15px 
+      margin-top: 75px 
+      width: 24px
+      color: black
+.sigu
+    position: absolute
+    height: 1000px
+    width: 400px
+    left: 5%
+    top: -25%
+    background: rgba(#dbdbdb, 0.95)
+    color: #020921
+    border-radius: 20px
+    .right-button
+      margin-left: 140px 
+      margin-top: 30px 
+      display: inline-block
+      padding: 10px 25px
+      letter-spacing: 2px
+.right-button.btnWebsite  
+  border: solid 1.5px #111c3f
+  background-color: #dbdbdb
+  color: white
+  transition: 0.5s
+  &:hover
+    background-color: rgba(#59b7f9, 0.1)
+      
+.center
+  position: absolute
+  height: 500px
+  width: 500px
+  left: calc(50% - 250px)
+  top: calc(50% - 250px)
+  border-radius: 50%
+  transform: scale(0.6)
+  transition: 1s
+  &:hover
+    transform: scale(0.8)
+  a.logo
+    position: absolute
+    height: 150px
+    width: 150px
+    top: calc(50% - 75px)
+    left: calc(50% - 75px)
+    background-image: url(https://raw.githubusercontent.com/odercards/images/master/%E9%AB%82.jpg)
+    border-radius: 50%
+  .inner-c/*--------------------內圈內圈--------------------*/
+    position: absolute
+    height: 155px
+    width: 155px
+    top: calc(50% - 77.5px)
+    left: calc(50% - 77.5px)
+    border-radius: 50%
+    transform: rotate(0deg)
+    /*動畫*/
+    animation: clockwise 20s normal linear both infinite
+    .trio1/*x為52.5 y為91*/
+      position: absolute
+      width: 0px
+      height: 0px
+      background: transparent
+      border-left: 10px solid #726f6a
+      border-top: 10px solid #ffffff
+      border-right: 10px solid transparent
+      border-bottom: 10px solid transparent
+      border-radius: 45%
+      top: calc(50% - 15px + 105px)
+      left: calc(50% - 15px)
+      transform: rotate(45deg)
+    .trio3
+      @extend .trio1
+      top: calc(50% - 15px + 52.5px)
+      left: calc(50% - 15px - 91px)
+      transform: rotate(105deg)
+    .trio5
+      @extend .trio1
+      top: calc(50% - 15px - 52.5px)
+      left: calc(50% - 15px - 91px)
+      transform: rotate(165deg)
+    .trio7
+      @extend .trio1
+      top: calc(50% - 15px - 105px)
+      left: calc(50% - 15px)
+      transform: rotate(225deg)
+    .trio9
+      @extend .trio1
+      top: calc(50% - 15px - 52.5px)
+      left: calc(50% - 15px + 91px)
+      transform: rotate(285deg)
+    .trio11
+      @extend .trio1
+      top: calc(50% - 15px + 52.5px)
+      left: calc(50% - 15px + 91px)
+      transform: rotate(345deg)
+    .trie2/*x為91 y為52.5*/
+      position: absolute
+      width: 0px
+      height: 0px
+      background: transparent
+      border-left: 20px solid #493829
+      border-top: 10px solid #895c35
+      border-right: 10px solid transparent
+      border-bottom: 10px solid transparent
+      border-radius: 35%
+      top: calc(50% - 15px + 91px)
+      left: calc(50% - 15px - 52.5px)
+      transform: rotate(75deg)
+    .trie4
+      @extend .trie2
+      top: calc(50% - 15px)
+      left: calc(50% - 15px - 105px)
+      transform: rotate(135deg)
+    .trie6
+      @extend .trie2
+      top: calc(50% - 15px - 91px)
+      left: calc(50% - 15px - 52.5px)
+      transform: rotate(195deg)
+    .trie8
+      @extend .trie2
+      top: calc(50% - 15px - 91px)
+      left: calc(50% - 15px + 52.5px)
+      transform: rotate(255deg)
+    .trie10
+      @extend .trie2
+      top: calc(50% - 15px)
+      left: calc(50% - 15px + 105px)
+      transform: rotate(315deg)
+    .trie12
+      @extend .trie2
+      top: calc(50% - 15px + 91px)
+      left: calc(50% - 15px + 52.5px)
+      transform: rotate(15deg)
+
+  .center-c/*--------------------中圈中圈--------------------*/
+      position: absolute
+      height: 250px
+      width: 250px
+      top: calc(50% - 125px)
+      left: calc(50% - 125px)
+      border-radius: 50%
+      transform: rotate(0deg)
+      /*動畫*/
+      animation: c-clockwise 12s normal linear both infinite
+      .trio13/*x為75 y為130*/
+        position: absolute
+        width: 0px
+        height: 0px
+        background: transparent
+        border-left: 20px solid #e0b29f
+        border-top: 20px solid #f29f7b
+        border-right: 10px solid transparent
+        border-bottom: 10px solid transparent
+        border-radius: 20%
+        top: calc(50% - 15px + 150px)
+        left: calc(50% - 15px)
+        transform: rotate(45deg)
+      .trio15
+        @extend .trio13
+        top: calc(50% - 15px + 75px)
+        left: calc(50% - 15px - 130px)
+        transform: rotate(105deg)
+      .trio17
+        @extend .trio13
+        top: calc(50% - 15px - 75px)
+        left: calc(50% - 15px - 130px)
+        transform: rotate(165deg)
+      .trio19
+        @extend .trio13
+        top: calc(50% - 15px - 150px)
+        left: calc(50% - 15px)
+        transform: rotate(225deg)
+      .trio21
+        @extend .trio13
+        top: calc(50% - 15px - 75px)
+        left: calc(50% - 15px + 130px)
+        transform: rotate(285deg)
+      .trio23
+        @extend .trio13
+        top: calc(50% - 15px + 75px)
+        left: calc(50% - 15px + 130px)
+        transform: rotate(345deg)
+      .trie14/*x為138.5 y為80*/
+        position: absolute
+        width: 0px
+        height: 0px
+        background: transparent
+        border-left: 30px solid #f98d5e
+        border-top: 30px solid #fc733a
+        border-right: 10px solid transparent
+        border-bottom: 10px solid transparent
+        border-radius: 25%
+        top: calc(50% - 21px + 138.5px)
+        left: calc(50% - 21px - 80px)
+        transform: rotate(75deg)
+      .trie16
+        @extend .trie14
+        top: calc(50% - 21px)
+        left: calc(50% - 21px - 160px)
+        transform: rotate(135deg)
+      .trie18
+        @extend .trie14
+        top: calc(50% - 21px - 138.5px)
+        left: calc(50% - 21px - 80px)
+        transform: rotate(195deg)
+      .trie20
+        @extend .trie14
+        top: calc(50% - 21px - 138.5px)
+        left: calc(50% - 21px + 80px)
+        transform: rotate(255deg)
+      .trie22
+        @extend .trie14
+        top: calc(50% - 21px)
+        left: calc(50% - 21px + 160px)
+        transform: rotate(315deg)
+      .trie24
+        @extend .trie14
+        top: calc(50% - 21px + 138.5px)
+        left: calc(50% - 21px + 80px)
+        transform: rotate(15deg)
+        
+  .outer-c/*--------------------外圈外圈--------------------*/
+      position: absolute
+      height: 360px
+      width: 360px
+      top: calc(50% - 180px)
+      left: calc(50% - 180px)
+      border-radius: 50%
+      transform: rotate(0deg)
+      /*動畫*/
+      animation: clockwise 12s normal linear both infinite
+      .trio25/*x為125 y為216.5*/
+        position: absolute
+        width: 0px
+        height: 0px
+        background: transparent
+        border-left: 20px solid #f4edd7
+        border-top: 20px solid #fff4c1
+        border-right: 80px solid transparent
+        border-bottom: 80px solid transparent
+        border-radius: 20%
+        top: calc(50% - 50px + 250px)
+        left: calc(50% - 50px)
+        transform: rotate(45deg)
+      .trio27
+        @extend .trio25
+        top: calc(50% - 50px + 125px)
+        left: calc(50% - 50px - 216.5px)
+        transform: rotate(105deg)
+      .trio29
+        @extend .trio25
+        top: calc(50% - 50px - 125px)
+        left: calc(50% - 50px - 216.5px)
+        transform: rotate(165deg)
+      .trio31
+        @extend .trio25
+        top: calc(50% - 50px - 250px)
+        left: calc(50% - 50px)
+        transform: rotate(225deg)
+      .trio33
+        @extend .trio25
+        top: calc(50% - 50px - 125px)
+        left: calc(50% - 50px + 216.5px)
+        transform: rotate(285deg)
+      .trio35
+        @extend .trio25
+        top: calc(50% - 50px + 125px)
+        left: calc(50% - 50px + 216.5px)
+        transform: rotate(345deg)
+      .trie26/*x為199.2 y為115*/
+        position: absolute
+        width: 0px
+        height: 0px
+        background: transparent
+        border-left: 40px solid #ffe14f
+        border-top: 40px solid #fff4c4
+        border-right: 10px solid transparent
+        border-bottom: 10px solid transparent
+        top: calc(50% - 26px + 199.2px)
+        left: calc(50% - 26px - 115px)
+        transform: rotate(75deg)
+      .trie28
+        @extend .trie26
+        top: calc(50% - 26px)
+        left: calc(50% -  26px - 230px)
+        transform: rotate(135deg)
+      .trie30
+        @extend .trie26
+        top: calc(50% -  26px - 199.2px)
+        left: calc(50% -  26px - 115px)
+        transform: rotate(195deg)
+      .trie32
+        @extend .trie26
+        top: calc(50% -  26px - 199.2px)
+        left: calc(50% -  26px + 115px)
+        transform: rotate(255deg)
+      .trie34
+        @extend .trie26
+        top: calc(50% -  26px)
+        left: calc(50% -  26px + 230px)
+        transform: rotate(315deg)
+      .trie36
+        @extend .trie26
+        top: calc(50% -  26px + 199.2px)
+        left: calc(50% -  26px + 115px)
+        transform: rotate(15deg)
+    
+@keyframes clockwise
+  0%
+    transform: rotate(0deg)
+  25%
+    transform: rotate(90deg)
+  50%
+    transform: rotate(180deg)
+  75%
+    transform: rotate(270deg)
+  100%
+    transform: rotate(360deg)
+  
+@keyframes c-clockwise
+  0%
+    transform: rotate(0deg)
+  25%
+    transform: rotate(-90deg)
+  50%
+    transform: rotate(-180deg)
+  75%
+    transform: rotate(-270deg)
+  100%
+    transform: rotate(-360deg)
+  
+  
+  
+  
+  
+  
+  
+/*簽名檔
+#sign
+  position: absolute
+  z-index: 999
+  width: 100%
+  color: #e2e2e0
+  top: 100%
+  text-align: center
+  p
+    margin: 0px
+    font-size: 9px
